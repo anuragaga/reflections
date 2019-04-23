@@ -1,0 +1,35 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+Ans: Viewing diff limited the number of lines to be seen. Since the error would be in the new file (since old file was in use and so error free) it was easier to find error. 
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+Ans: It can help comparing file with older versions to see what changes have been made and who has made they changes.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+Ans: 
+Pros: Manually committing allows the programmer to commit when logical changes are made. It allows user to add comments describing the changes
+Cons: User might forget to commit changes or if there is a system failure and changes can be lost. User might commit very large or very small changes which makes version control unusful.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+Ans: Since Git is used in software development and there could be dependencies between files, Git allows saving multiple files together for convenience of user. It could restrict saving individual files but that would be inconvenient for the user. Other tools like Google Docs are mostly used for documentation and there is less likelyhood of dependencies between files, they treat the files separately.
+
+How can you use the commands git log and git diff to view the history of files?
+
+Ans: Git log can retrieve the commit Ids. It will also give the message added at the time of commit. With Stats options, it will give the number of files/lines deleted/added and number of files modified with each commit. With git diff, we can see what changes to the files were made (which lines were added/deleted).
+
+How might using version control make you more confident to make changes that
+could break something?
+
+Ans: If we break something, we can revert back to the previous working version. We can then check using git diff what code changes were made and debug what might be the cause of breakage.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+Ans:
